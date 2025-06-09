@@ -1,14 +1,14 @@
 {
-  "name": "synthwave-dark-vscode",
+  "name": "synthwave-liquid-glass",
   "displayName": "SynthWave Liquid Glass",
-  "description": "A Dark Synthwave/Monokai inspired colour theme to satisfy your neon dreams",
-  "version": "1.5.5",
-  "author": "Sammy Kumar",
-  "publisher": "SammyKumar",
+  "description": "A retro 80s-inspired dark theme for VS Code, blending synthwave neon and Monokai colors with a liquid glass effect.",
+  "version": "0.0.1",
+  "author": "Sam Kumar",
+  "publisher": "DevLabHQ",
   "icon": "assets/icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sammykumar/synthwave-dark-vscode"
+    "url": "https://github.com/sammykumar/synthwave-liquid-glass"
   },
   "engines": {
     "vscode": "^1.96.0"
@@ -34,21 +34,21 @@
   "contributes": {
     "commands": [
       {
-        "command": "synthwave-dark.enableGlow",
-        "title": "Synthwave Dark: Enable Glow"
+        "command": "synthwave-liquid-glass.enableGlow",
+        "title": "Synthwave Liquid Glass: Enable Glow"
       },
       {
-        "command": "synthwave-dark.cleanup",
-        "title": "Synthwave Dark: Clean Up Workbench HTML"
+        "command": "synthwave-liquid-glass.cleanup",
+        "title": "Synthwave Liquid Glass: Clean Up Workbench HTML"
       }
     ],
     "configuration": {
-      "title": "SynthWave Dark",
+      "title": "SynthWave Liquid Glass",
       "properties": {}
     },
     "themes": [
       {
-        "label": "SynthWave 84",
+        "label": "SynthWave Liquid Glass",
         "uiTheme": "vs-dark",
         "path": "./themes/synthwave-color-theme.json"
       }
