@@ -1,13 +1,13 @@
 :root {
   /* Individual Apple Intelligence brand colors */
-  --ai-yellow: #FFC96B;
-  --ai-coral: #FF815D;
-  --ai-pink: #FF4B8D;
-  --ai-violet: #D24BDF;
-  --ai-indigo: #784BFF;
-  --ai-blue: #327FFF;
-  --ai-cyan: #1CDAFF;
-  --ai-aqua: #00E6D7;
+  --ai-yellow: #ffc96b;
+  --ai-coral: #ff815d;
+  --ai-pink: #ff4b8d;
+  --ai-violet: #d24bdf;
+  --ai-indigo: #784bff;
+  --ai-blue: #327fff;
+  --ai-cyan: #1cdaff;
+  --ai-aqua: #00e6d7;
 
   /* Full sweep gradient using those variables */
   --ai-sweep: linear-gradient(90deg,
@@ -38,10 +38,9 @@
       var(--ai-aqua) 100%) !important;
 }
 
-
 /* Active tab stripe */
 .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.sizing-fit.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -77,7 +76,6 @@
     opacity: 1;
   }
 }
-
 
 /* update lightbuld to be neon */
 /* .lightbulb-glyph {

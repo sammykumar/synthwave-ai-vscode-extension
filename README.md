@@ -1,9 +1,9 @@
-# SynthWave Dark
+# SynthWave Liquid Glass
 
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/SammyKumar.synthwave-dark-vscode)](https://marketplace.visualstudio.com/items?itemName=SammyKumar.synthwave-dark-vscode)
 [![Installs](https://img.shields.io/visual-studio-marketplace/i/SammyKumar.synthwave-dark-vscode)](https://marketplace.visualstudio.com/items?itemName=SammyKumar.synthwave-dark-vscode)
 
-A Dark Synthwave/Monokai/Apple Intelligence inspired colour theme to satisfy your neon dreams.
+A Synthwave theme with colors inspired by Monokai and Apple's Liquid Glass.
 
 <div align="center" style="max-width: 850px; margin: 0 auto;">
 
@@ -19,6 +19,25 @@ A Dark Synthwave/Monokai/Apple Intelligence inspired colour theme to satisfy you
 - 🚀 **Optimized for JavaScript/TypeScript** - Carefully crafted syntax highlighting for modern development
 - 🎨 **Monokai-Inspired Palette** - Classic color scheme with vibrant neon accents
 - 🌙 **Dark Background** - Easy on the eyes with high contrast for readability
+
+## 🎨 Color Palette
+
+The SynthWave Dark theme features a carefully curated gradient color palette:
+
+| Color    | Hex Code  | Preview                                                            |
+| -------- | --------- | ------------------------------------------------------------------ |
+| Teal     | `#3E9583` | ![#3E9583](https://via.placeholder.com/20x20/3E9583/000000?text=+) |
+| Lime     | `#BFC040` | ![#BFC040](https://via.placeholder.com/20x20/BFC040/000000?text=+) |
+| Green    | `#82C983` | ![#82C983](https://via.placeholder.com/20x20/82C983/000000?text=+) |
+| Yellow   | `#EDA725` | ![#EDA725](https://via.placeholder.com/20x20/EDA725/000000?text=+) |
+| Orange   | `#F69431` | ![#F69431](https://via.placeholder.com/20x20/F69431/000000?text=+) |
+| Pink     | `#F2596E` | ![#F2596E](https://via.placeholder.com/20x20/F2596E/000000?text=+) |
+| Purple   | `#C074CC` | ![#C074CC](https://via.placeholder.com/20x20/C074CC/000000?text=+) |
+| Lavender | `#997BDD` | ![#997BDD](https://via.placeholder.com/20x20/997BDD/000000?text=+) |
+| Violet   | `#7F6FD1` | ![#7F6FD1](https://via.placeholder.com/20x20/7F6FD1/000000?text=+) |
+| Blue     | `#2BB4EB` | ![#2BB4EB](https://via.placeholder.com/20x20/2BB4EB/000000?text=+) |
+
+These colors create the signature synthwave gradient that flows throughout the theme, providing both visual appeal and excellent readability.
 
 ## Neon Glow Effects
 

@@ -74,6 +74,7 @@
   },
   "scripts": {
     "test": "vscode-test",
+    "dev": "vscode-test",
     "pretest": "npm run clean-test && npm run compile-tests && npm run compile && npm run lint",
     "clean-test": "rm -rf .vscode-test out",
     "compile-tests": "tsc -p . --outDir out",

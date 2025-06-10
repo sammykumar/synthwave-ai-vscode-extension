@@ -21,7 +21,7 @@ export function activate(context: vscode.ExtensionContext) {
 	console.log('Run Synthwave Dark: Enable Glow to enable glow effect');
 
 	// Register the test command defined in package.json
-	const enableGlowDisposable = vscode.commands.registerCommand('synthwave-dark.enableGlow', async () => {
+	const enableGlowDisposable = vscode.commands.registerCommand('synthwave-liquid-glass.enableGlow', async () => {
 		// Retrieve and log file paths
 		const workbenchHtmlPath = getWorkbenchFilepath();
 
@@ -142,10 +142,16 @@ function injectCSSAndJS(htmlFilepath: string) {
 	const version = packageJson.version;
 
 	// Read global CSS content
-	const cssPath = path.join(__dirname, 'css/global.css');
-	const cssContent = fs.readFileSync(cssPath, 'utf-8');
+	const cssGlobalPath = path.join(__dirname, 'css/global.css');
+	const cssGlobalContent = fs.readFileSync(cssGlobalPath, 'utf-8');
+	console.log("cssPath", cssGlobalPath);
 
-	console.log("cssPath", cssPath);
+
+	// Read global CSS content
+	const cssLiquidGlasslPath = path.join(__dirname, 'css/global.css');
+	const cssLiquidGlassContent = fs.readFileSync(cssGlobalPath, 'utf-8');
+	console.log("cssLiquidGlasslPath", cssLiquidGlasslPath);
+
 
 	// Read global JS Path
 	const jsPath = path.join(__dirname, 'js/glow.js');
@@ -158,7 +164,8 @@ function injectCSSAndJS(htmlFilepath: string) {
 	const injectionBlock = `
 <!-- START: Synthwave Dark ${version} (CSS + JS) -->
 <style>
-${cssContent}
+${cssLiquidGlassContent}
+${cssGlobalContent}
 </style>
 <script src="${jsPath}">
 </script>
