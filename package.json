@@ -1,7 +1,7 @@
 {
   "name": "synthwave-liquid-glass",
   "displayName": "SynthWave Liquid Glass",
-  "description": "A retro 80s-inspired dark theme for VS Code, blending synthwave neon and Monokai colors with a liquid glass effect.",
+  "description": "A liquid glass synthwave theme for VS Code. Blending synthwave neon and Monokai colors with a liquid glass effect.",
   "version": "0.0.1",
   "author": "Sam Kumar",
   "publisher": "DevLabHQ",
@@ -54,9 +54,6 @@
       }
     ]
   },
-  "dependencies": {
-    "semver": "^7.7.1"
-  },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
@@ -67,21 +64,23 @@
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.5.2",
     "@vscode/vsce": "^3.4.2",
+    "chokidar": "^4.0.3",
     "esbuild": "^0.25.3",
     "eslint": "^9.25.1",
     "npm-run-all": "^4.1.5",
+    "semver": "^7.7.1",
     "typescript": "^5.8.3"
   },
   "scripts": {
     "test": "vscode-test",
-    "dev": "code-insiders --extensionDevelopmentPath=. --user-data-dir=./.vscode-dev --disable-extensions ./examples",
+    "dev": "code-insiders --user-data-dir=/tmp/.vscode-dev ../examples --extensionDevelopmentPath=. --reuse-window",
     "compile": "npm run check-types && npm run lint && node esbuild.js",
+    "package": "vsce package",
     "watch": "npm-run-all -p watch:*",
     "watch:esbuild": "node esbuild.js --watch",
     "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
     "lint": "eslint src",
     "check-types": "tsc --noEmit",
-    "package": "npm run check-types && npm run lint && node esbuild.js --production",
     "clean": "rm -rf dist out .vscode-test",
     "pretest": "npm run clean && npm run compile",
     "feature:patch": "npm run package && npm version patch --no-git-tag-version && git add package.json package-lock.json && git commit -m \"chore: bump version to $(node -p 'require(\"./package.json\").version')\" && git push origin $(git branch --show-current) && gh pr create --base master --fill",
