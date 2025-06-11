@@ -75,6 +75,9 @@
   "scripts": {
     "test": "vscode-test",
     "dev": "vscode-test",
+    "dev:watch": "npm-run-all -p watch:esbuild dev:instance",
+    "dev:instance": "npm run dev .vscode-dev.mjs",
+    "dev:fresh": "rm -rf /tmp/.vscode-dev && npm run dev:instance",
     "pretest": "npm run clean-test && npm run compile-tests && npm run compile && npm run lint",
     "clean-test": "rm -rf .vscode-test out",
     "compile-tests": "tsc -p . --outDir out",

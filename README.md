@@ -20,6 +20,21 @@ A Synthwave theme with colors inspired by Monokai and Apple's Liquid Glass.
 - 🎨 **Monokai-Inspired Palette** - Classic color scheme with vibrant neon accents
 - 🌙 **Dark Background** - Easy on the eyes with high contrast for readability
 
+## 🛠️ Development
+
+This extension modifies VS Code's workbench files at runtime. For efficient development:
+
+```bash
+# Quick start - runs watch mode + isolated dev instance
+npm run dev:watch
+
+# Or run separately:
+npm run watch:esbuild  # Auto-rebuilds extension
+npm run dev:instance   # Isolated VS Code instance
+```
+
+👉 **See [DEV-WORKFLOW.md](./DEV-WORKFLOW.md) for complete development guide**
+
 ## 🎨 Color Palette
 
 The SynthWave Dark theme features a carefully curated gradient color palette:

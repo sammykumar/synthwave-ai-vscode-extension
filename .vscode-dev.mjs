@@ -3,18 +3,18 @@ import { defineConfig } from "@vscode/test-cli";
 export default defineConfig({
   label: "development",
   files: "out/test/**/*.test.js",
-  workspaceFolder:
-    "/Users/samkumar/Development/SK-Productions-LLC/vscode-extensions/synthwave-ai-vscode-extension/examples",
+  workspaceFolder: "./examples", // Relative path is cleaner
   launchArgs: [
-    "--disable-extensions",
     "--disable-workspace-trust",
     "--user-data-dir=/tmp/.vscode-dev",
-    // Add headless options for CI
-    ...(process.env.CI ? ["--headless"] : []),
+    // Enable your extension for testing
+    "--enable-proposed-api",
+    // Keep other extensions disabled for isolation
+    "--disable-extensions",
   ],
-  // mocha: {
-  //   globalSetup: "./out/test/globalSetup.js",
-  //   globalTeardown: "./out/test/globalTeardown.js",
-  // },
-  keepAlive: true, // This keeps the window open
+  keepAlive: true,
+  // Optional: auto-install your extension
+  installExtension: [
+    ".", // Install current extension being developed
+  ],
 });
