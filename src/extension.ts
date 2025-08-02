@@ -75,6 +75,7 @@ function getWorkbenchFilepath() {
   const fullWorkbenchFilepath = path.join(
     base,
     electronBase,
+    "workbench",
     workBenchFilename
   );
 
