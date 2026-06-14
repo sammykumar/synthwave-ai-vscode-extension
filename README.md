@@ -19,6 +19,7 @@ A Dark Synthwave/Monokai/Apple Intelligence inspired colour theme to satisfy you
 - 🚀 **Optimized for JavaScript/TypeScript** - Carefully crafted syntax highlighting for modern development
 - 🎨 **Monokai-Inspired Palette** - Classic color scheme with vibrant neon accents
 - 🌙 **Dark Background** - Easy on the eyes with high contrast for readability
+- 🌿 **Git Status Decorations** - Visual feedback in the file explorer for Git status (modified, added, ignored)
 
 ## Neon Glow Effects
 
